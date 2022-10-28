@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(244,240,236);
+}
+
+.loader {
+  position: absolute;
+}

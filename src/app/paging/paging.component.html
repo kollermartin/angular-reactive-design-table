@@ -1,0 +1,11 @@
+<div class="paging">
+  <p *ngFor="let name of pageData$ | async">
+  {{name}}
+  </p>
+  <div class="controls">
+    <button (click)="previousPage()" [disabled]="(pageNumber$ | async) === 1">Previous</button>
+    <button (click)="nextPage()" [disabled]="(pageNumber$ | async) === 3">Next</button>
+  </div>
+  <span class="page">page: {{pageNumber$ | async}}</span>
+</div>
+
